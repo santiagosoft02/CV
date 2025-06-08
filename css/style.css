@@ -1,0 +1,224 @@
+/* Diseño pagina completa*/
+*{  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body{
+  margin: 0;
+  height: 100vh;
+  background-color: #928DAB;
+  color: white;
+}
+/*--------------------------- Header ---------------------------*/
+
+header{
+  background-color: #1F1C2C;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.img-perfil{
+  margin-top: 30px;
+  width: 10%;
+  border-radius: 50%;
+}
+/*Color de nombre y est. desarrollo ...*/
+.presentacion{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* div Botones Header*/
+.botones{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding-bottom: 25px;
+}
+
+/* Diseño de cada boton*/
+.c-nav-item{
+  border: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: rgb(43, 43, 43);
+  cursor: pointer;
+  color: white;
+}
+
+.c-nav-item:hover{
+  color: white;
+  background-color: #7184ed;
+  transition: .7s;
+  padding: 0 25px;
+}
+
+/*Certificados*/
+.certificados{
+  text-align: center;
+}
+
+
+a{
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px;
+  color: #7184ed;
+}
+
+a:hover{
+  transition: 1s;
+  font-size: 20px;
+  color: white;
+}
+
+/* Diseño separador de header y section*/
+hr{
+  margin: 30px;
+  border: 1px solid;
+  border-radius: 20px;
+  color: aliceblue;
+}
+
+/*-------------------------- SECTION --------------------------*/
+section{
+  display: flex;
+  justify-content: center;
+}
+
+/*Separacion entre section */
+.contenido-general{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.contenido-general.mostrar{
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Boton de lenguajes*/
+.contenido-general .boton-conocimiento{
+
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* Boton ocultar*/
+.boton-ocultar{
+  display: block;
+  margin: 20px auto;
+  height: 40px;
+  width: 170px;
+  font-size: 25px;
+  border-radius: 20px;
+  padding: 1px 1px 1px 1ox; 
+  cursor: pointer;
+}
+
+/* Logo lenguajes section*/
+.imagen-lenguaje {
+  margin: 0px 10px;
+  width: 75px;      /* Ajusta el tamaño a tu gusto */
+  height: 75px;     /* Mantiene proporción */
+}
+
+/* -------------------- MAIN --------------------*/
+/* Descripcion del conococimiento seleccionado*/
+main{
+  margin-bottom: 100px;
+}
+
+.desc-conocimiento{
+  margin-top: 50px;
+  justify-content: center;
+  display: flex;
+  flex-direction: col;
+  gap: 100px;  
+}
+
+/* Titulo del conococimiento*/
+.contenido-conocimiento h1{
+  margin: 50px;
+  text-align: center;
+}
+/* Imagen del conocimiento*/
+.desc-conocimiento img{
+  width: 200px;
+  height: 200px;
+}
+
+/* Parrafo del conocimiento */
+.desc-conocimiento p{
+  width: 25%;
+  font-size: 20px;
+}
+/*-----------------  SOBREMI-DESC ----------------------*/
+.sobremi-desc{
+  max-width: 600px;
+  margin: 0 auto; /* Centra horizontalmente el div */
+  text-align: center; /* Centra el texto dentro del div */
+}
+/* ---------------- SECTION-SOBREMI -------------------*/
+
+/*Contenedores de SECTION-SOBREMI*/
+.referencia, .idiomas, .educacion, .habilidades{
+margin: 25px 25px;
+}
+
+/* Titulo de cada contenedor*/
+h3{
+  margin: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Telefono de contacto y correo (SECTION y FOOTER)*/
+.email, .tel{
+  display: flex;
+  font-size: 20px;
+}
+
+/* Iconos email, telefono*/
+.email img, .tel img{
+  width: 25px;
+  height: auto;
+  margin-right: 8px;
+}
+
+/* ------------- FOOTER ----------------- */
+footer{
+  margin-top: 125px;
+  background-color: #1F1C2C;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.footer-der{
+  display: flex;
+}
+.p-footer{
+  font-size: 20px;
+  font-weight: bold;
+  max-width: 300px;
+}
+
+.div-footer{
+  margin: 50px;
+}
+
+.icon-footer, .footer-der a{
+  display: flex;
+  width: 25px;
+}
+
+.footer-der a p{
+  margin-top: 3px;
+  margin-left: 10px;
+}
