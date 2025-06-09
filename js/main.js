@@ -28,7 +28,7 @@ function conocimientosinfo() {
       <div class="botones-logos">     
          
         <button class="boton-conocimiento" onclick="infoDB()">
-          <img src="imgs/conocimientos/bd.png" alt="" class="imagen-lenguaje">
+          <img src="imgs/conocimientos/bd.png" alt="Logo-DataBase" class="imagen-lenguaje">
         </button>
 
         <button class="boton-conocimiento" onclick="infoFrontend()">

@@ -117,7 +117,7 @@ section{
   width: 170px;
   font-size: 25px;
   border-radius: 20px;
-  padding: 1px 1px 1px 1ox; 
+  padding: 1px; 
   cursor: pointer;
 }
 
@@ -221,4 +221,123 @@ footer{
 .footer-der a p{
   margin-top: 3px;
   margin-left: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px){
+  /* DISEÑO PRINCIAL SIN EVENTOS DE .js*/
+  .img-perfil{
+    width: 25%;
+    margin-left: 10px;
+  }
+
+  .nombre-info h1{
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  .nombre-info h4{
+    font-size: 12px;
+  }
+
+  .botones{
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .sobremi-desc{
+    margin: 50px;
+  }
+
+  .section-sobremi{
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .habilidades ul li, .referencia h4, .referencia .tel, .idiomas .idioma, .educacion .desc-educacion{
+    text-align: center;
+    justify-content: center;
+    margin: 3px 30px;
+  }
+
+  footer{
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  footer .sitio-creado{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  footer .footer-der .div-footer{
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-der{
+    justify-content: space-evenly;
+  }
+
+  footer .footer-der h3{
+    font-size: 17px;
+  }
+
+  .icon-footer{
+    width: 20px;
+  }
+
+  .links p{
+    font-size: 13px;
+  }
+
+  /* DISEÑO BOTONES DE main.js*/
+  .imagen-lenguaje{
+    margin: 0px 0px;
+    width: 45px;      /* Ajusta el tamaño a tu gusto */
+    height: 45px;     /* Mantiene proporción */
+  }
+
+    /* DISEÑO BOTON OCULTAR HEADER*/
+    .boton-ocultar{
+      display: block;
+      margin: 20px auto;
+      height: 35px;
+      width: 130px;
+      font-size: 17px;
+      border-radius: 20px;
+      padding: 1px; 
+}
+
+  /* DISEÑO LINKS Certificados DE main.js*/
+  .certificados{
+    font-size: 11px;
+  }
+
+  a:hover{
+    font-size: 11px;
+  }
+
+  /* DISEÑO DE lenguajes.js*/
+  .desc-conocimiento{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-desc{
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+  }
+
+  .desc-conocimiento p, .desc-conocimiento ul{
+    margin: auto;
+    width: 60%;
+    font-size: 15px;
+  }
+  .desc-conocimiento .img-desc-cono{
+    width: 25%;
+    height: 25%;
+  } 
 }
