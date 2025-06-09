@@ -266,38 +266,6 @@ footer{
     justify-content: center;
     margin: 3px 30px;
   }
-  /* FOOTER */
-  footer{
-    margin: 0;
-    padding: 0 0 40px 0;
-    flex-direction: column;
-  }
-
-  footer .sitio-creado{
-    font-size: 15px;
-    text-align: center;
-  }
-
-  footer .footer-der .div-footer{
-    padding: 0;
-    margin: 0;
-  }
-
-  .footer-der{
-    justify-content: space-evenly;
-  }
-
-  footer .footer-der h3{
-    font-size: 17px;
-  }
-
-  .icon-footer{
-    width: 20px;
-  }
-
-  .links p{
-    font-size: 13px;
-  }
 
   /* DISEÑO BOTONES DE main.js*/
   .imagen-lenguaje{
@@ -336,6 +304,8 @@ footer{
     display: flex;
     align-items: center;
     margin-left: 35px;
+    width: 80%;
+    margin-bottom: 30px;
   }
 
   .desc-conocimiento p, .desc-conocimiento ul{
@@ -344,7 +314,40 @@ footer{
     font-size: 15px;
   }
   .desc-conocimiento .img-desc-cono{
-    width: 25%;
-    height: 25%;
-  } 
+    width: 30%;
+    height: 30%;
+  }
+
+    /* FOOTER */
+  footer{
+    margin: 0;
+    padding: 0 0 40px 0;
+    flex-direction: column;
+  }
+
+  footer .sitio-creado{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  footer .footer-der .div-footer{
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-der{
+    justify-content: space-evenly;
+  }
+
+  footer .footer-der h3{
+    font-size: 17px;
+  }
+
+  .icon-footer{
+    width: 20px;
+  }
+
+  .links p{
+    font-size: 13px;
+  }
 }
