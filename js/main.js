@@ -28,23 +28,23 @@ function conocimientosinfo() {
       <div class="botones-logos">     
          
         <button class="boton-conocimiento" onclick="infoDB()">
-          <img src="../imgs/conocimientos/bd.png" alt="" class="imagen-lenguaje">
+          <img src="imgs/conocimientos/bd.png" alt="" class="imagen-lenguaje">
         </button>
 
         <button class="boton-conocimiento" onclick="infoFrontend()">
-          <img src="../imgs/conocimientos/frontend.png" alt="" class="imagen-lenguaje">
+          <img src="imgs/conocimientos/frontend.png" alt="" class="imagen-lenguaje">
         </button>
 
         <button class="boton-conocimiento" onclick="infoLinux()">
-          <img src="../imgs/conocimientos/linux.png" alt="" class="imagen-lenguaje">
+          <img src="imgs/conocimientos/linux.png" alt="" class="imagen-lenguaje">
         </button>
 
         <button class="boton-conocimiento" onclick="infoJava()">
-          <img src="../imgs/conocimientos/java.png" alt="" class="imagen-lenguaje">
+          <img src="imgs/conocimientos/java.png" alt="" class="imagen-lenguaje">
         </button>
 
         <button class="boton-conocimiento" onclick="infoGcloud()">
-          <img src="../imgs/conocimientos/gcloud.png" alt="" class="imagen-lenguaje">
+          <img src="imgs/conocimientos/gcloud.png" alt="" class="imagen-lenguaje">
         </button>
       </div>
       <button class="boton-ocultar" onclick="ocultarGeneral()">Ocultar</button>
