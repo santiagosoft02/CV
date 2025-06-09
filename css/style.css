@@ -1,5 +1,6 @@
 /* Diseño pagina completa*/
-*{  margin: 0;
+*{  
+  margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
@@ -135,11 +136,17 @@ main{
 }
 
 .desc-conocimiento{
-  margin-top: 50px;
-  justify-content: center;
   display: flex;
-  flex-direction: col;
-  gap: 100px;  
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.img-desc{
+  display: flex;
+  width: 35%;
+  align-items: center;
 }
 
 /* Titulo del conococimiento*/
@@ -149,13 +156,13 @@ main{
 }
 /* Imagen del conocimiento*/
 .desc-conocimiento img{
+  margin-right: 10px;
   width: 200px;
   height: 200px;
 }
 
 /* Parrafo del conocimiento */
 .desc-conocimiento p{
-  width: 25%;
   font-size: 20px;
 }
 /*-----------------  SOBREMI-DESC ----------------------*/
@@ -254,12 +261,12 @@ footer{
     margin-bottom: 50px;
   }
 
-  .habilidades ul li, .referencia h4, .referencia .tel, .idiomas .idioma, .educacion .desc-educacion{
+  .habilidades ul li, .idiomas .idioma, .educacion .desc-educacion{
     text-align: center;
     justify-content: center;
     margin: 3px 30px;
   }
-
+  /* FOOTER */
   footer{
     margin: 0;
     padding: 0 0 40px 0;
@@ -308,7 +315,7 @@ footer{
       font-size: 17px;
       border-radius: 20px;
       padding: 1px; 
-}
+    }
 
   /* DISEÑO LINKS Certificados DE main.js*/
   .certificados{
