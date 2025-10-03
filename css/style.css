@@ -1,45 +1,52 @@
-/* Diseño pagina completa*/
-*{  
+/* ---------------- GLOBAL ---------------- */
+* {  
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body{
+html, body {
+  height: 100%;
+}
+
+body {
   margin: 0;
-  height: 100vh;
   background-color: #928DAB;
   color: white;
 }
-/*--------------------------- Header ---------------------------*/
 
-header{
-  background-color: #1F1C2C;
+/* ---------------- LAYOUT PRINCIPAL ---------------- */
+aside {
+  color: #3d3d3d;
+  position: fixed;        /* Mantener estático en la página */
+  top: 0;
+  left: 0;
+  height: 100vh;          /* Ocupa el 100% de la altura */
+  width: 20%;             /* Barra lateral 20% */
+  background-color: #e2e2e2;
+  overflow-y: auto;        /* Scroll si el contenido es mayor */
+}
+
+header, main, section, footer {
+  margin-left: 20%;       /* Deja espacio para el aside */
+  width: 80%;             /* Ocupan el resto de la pantalla */
+  box-sizing: border-box; /* Evita que padding/border rompan el ancho */
+}
+
+/* ---------------- HEADER ---------------- */
+header {
+  background-color: transparent;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
-.img-perfil{
-  margin-top: 30px;
-  width: 10%;
-  border-radius: 50%;
-}
-/*Color de nombre y est. desarrollo ...*/
-.presentacion{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-/* div Botones Header*/
-.botones{
+.botones {
   display: flex;
   justify-content: center;
   gap: 25px;
   padding-bottom: 25px;
 }
 
-/* Diseño de cada boton*/
-.c-nav-item{
+.c-nav-item {
   border: none;
   font-weight: bold;
   padding: 10px 15px;
@@ -49,69 +56,59 @@ header{
   color: white;
 }
 
-.c-nav-item:hover{
+.c-nav-item:hover {
   color: white;
   background-color: #7184ed;
   transition: .7s;
   padding: 0 25px;
 }
 
-/*Certificados*/
-.certificados{
+/* ---------------- ASIDE / PRESENTACION ---------------- */
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img-perfil {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 50%;
+  border-radius: 50%;
+}
+
+.sobremi-desc {
+  margin: 0 50px;
   text-align: center;
 }
 
-
-a{
-  font-weight: bold;
-  display: inline-block;
-  text-decoration: none;
-  margin: 10px;
-  color: #7184ed;
-}
-
-a:hover{
-  transition: 1s;
-  font-size: 20px;
-  color: white;
-}
-
-/* Diseño separador de header y section*/
-hr{
-  margin: 30px;
-  border: 1px solid;
-  border-radius: 20px;
-  color: aliceblue;
-}
-
-/*-------------------------- SECTION --------------------------*/
-section{
+/* ---------------- SECTION ---------------- */
+section {
   display: flex;
   justify-content: center;
 }
 
-/*Separacion entre section */
-.contenido-general{
+.contenido-general {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.contenido-general.mostrar{
+.contenido-general.mostrar {
   opacity: 1;
   transform: translateY(0);
 }
-/* Boton de lenguajes*/
-.contenido-general .boton-conocimiento{
 
+.contenido-general .boton-conocimiento {
   border: none;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   cursor: pointer;
   margin: 10px;
 }
 
-/* Boton ocultar*/
-.boton-ocultar{
+/* Boton ocultar */
+.boton-ocultar {
   display: block;
   margin: 20px auto;
   height: 40px;
@@ -122,20 +119,19 @@ section{
   cursor: pointer;
 }
 
-/* Logo lenguajes section*/
+/* Logo lenguajes */
 .imagen-lenguaje {
-  margin: 0px 10px;
-  width: 75px;      /* Ajusta el tamaño a tu gusto */
-  height: 75px;     /* Mantiene proporción */
+  margin: 0 10px;
+  width: 75px;
+  height: 75px;
 }
 
-/* -------------------- MAIN --------------------*/
-/* Descripcion del conococimiento seleccionado*/
-main{
+/* ---------------- MAIN ---------------- */
+main {
   margin-bottom: 100px;
 }
 
-.desc-conocimiento{
+.desc-conocimiento {
   display: flex;
   justify-content: space-evenly;
   padding: 0;
@@ -143,92 +139,98 @@ main{
   align-items: center;
 }
 
-.img-desc{
+.img-desc {
   display: flex;
   width: 35%;
   align-items: center;
 }
 
-/* Titulo del conococimiento*/
-.contenido-conocimiento h1{
+.contenido-conocimiento h1 {
   margin: 50px;
   text-align: center;
 }
-/* Imagen del conocimiento*/
-.desc-conocimiento img{
+
+.desc-conocimiento img {
   margin-right: 10px;
   width: 200px;
   height: 200px;
 }
 
-/* Parrafo del conocimiento */
-.desc-conocimiento p{
+.desc-conocimiento p {
   font-size: 20px;
 }
-/*-----------------  SOBREMI-DESC ----------------------*/
-.sobremi-desc{
-  max-width: 600px;
-  margin: 0 auto; /* Centra horizontalmente el div */
-  text-align: center; /* Centra el texto dentro del div */
-}
-/* ---------------- SECTION-SOBREMI -------------------*/
 
-/*Contenedores de SECTION-SOBREMI*/
-.referencia, .idiomas, .educacion, .habilidades{
-margin: 25px 25px;
-}
-
-/* Titulo de cada contenedor*/
-h3{
+/* ---------------- TEXTO Y ELEMENTOS ---------------- */
+h3 {
   margin: 20px;
   text-align: center;
   font-size: 25px;
 }
 
-/* Telefono de contacto y correo (SECTION y FOOTER)*/
-.email, .tel{
+a {
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px;
+  color: #7184ed;
+}
+
+a:hover {
+  transition: 1s;
+  font-size: 20px;
+  color: white;
+}
+
+hr {
+  margin: 30px;
+  border: 1px solid;
+  border-radius: 20px;
+  color: aliceblue;
+}
+
+.email, .tel {
   display: flex;
   font-size: 20px;
 }
 
-/* Iconos email, telefono*/
-.email img, .tel img{
+.email img, .tel img {
   width: 25px;
   height: auto;
   margin-right: 8px;
 }
 
-/* ------------- FOOTER ----------------- */
-footer{
+/* ---------------- FOOTER ---------------- */
+footer {
   margin-top: 125px;
   background-color: #1F1C2C;
   display: flex;
   justify-content: space-around;
-
 }
 
-.footer-der{
+.footer-der {
   display: flex;
 }
-.p-footer{
+
+.p-footer {
   font-size: 20px;
   font-weight: bold;
   max-width: 300px;
 }
 
-.div-footer{
+.div-footer {
   margin: 50px;
 }
 
-.icon-footer, .footer-der a{
+.icon-footer, .footer-der a {
   display: flex;
   width: 25px;
 }
 
-.footer-der a p{
+.footer-der a p {
   margin-top: 3px;
   margin-left: 10px;
 }
+
 
 /* Responsive design */
 @media (max-width: 600px){
@@ -244,6 +246,7 @@ footer{
   }
 
   .nombre-info h4{
+
     font-size: 12px;
   }
 
@@ -261,7 +264,7 @@ footer{
     margin-bottom: 50px;
   }
 
-  .habilidades ul li, .idiomas .idioma, .educacion .desc-educacion{
+  .proyectos ul li, .idiomas .idioma, .educacion .desc-educacion{
     text-align: center;
     justify-content: center;
     margin: 3px 30px;

@@ -11,77 +11,66 @@
 </head>
 <body>
     <header>
+        <nav class="botones">
+            <button class="c-nav-item" onclick="certificados()">Certificados</button>
+            <button class="c-nav-item" onclick="conocimientosinfo()">Conocimientos</button>
+        </nav>
+
+        <section id="info-nav">
+            <!-- Informacion segun el boton seleccionado en nav -->
+        </section>
+    </header>
+
+    <aside>
         <div class="presentacion">
             <img src="imgs/foto-perfil.png" alt="img-perfil" class="img-perfil">
             <div class="nombre-info">
                 <h1>Santiago Castellanos</h1>
                 <h4>Est. desarrollo de software</h4>
             </div>
+
+            <div class="sobremi-desc">
+                <h3>Sobre Mi</h3>
+                <p>Soy estudiante de desarrollo de software con enfoque en bases de datos,
+                    motivado por integrarme a una empresa donde pueda contribuir activamente
+                    y continuar aprendiendo. Mi objetivo es aplicar y poner a prueba
+                    mis habilidades y conocimientos, ofreciendo un desempeño excepcional
+                    en el área que se me asigne.
+                </p>
+            </div>
+            
+            <div class="idiomas">
+                <h3>Idiomas</h3>
+                <div class="idioma">
+                    <p>Español (Nativo)</p>
+                    <p>Ingles (B1)</p>
+                </div>
+            </div>
+                    <div class="educacion">
+            <h3>Educacion</h3>
+            <div class="desc-educacion">
+                <h4>Colegio la felicidad I.E.D</h4>
+                <p>Educación bachiller <br> 2018-2019</p>
+            </div>
+            
+            <div class="desc-educacion">
+                <h4>Universitaria Uniagustiniana</h4>
+                <p>Desarrollo de software <br> 2023-2026</p>
+            </div>
         </div>
-
-        <nav class="botones">
-            <button class="c-nav-item" onclick="sobremi()">Sobre mi</button>
-            <button class="c-nav-item" onclick="certificados()">Certificados</button>
-            <button class="c-nav-item" onclick="conocimientosinfo()">Conocimientos</button>
-        </nav>
-
-        <section id="info-nav">
-
-            <!-- Informacion segun el boton seleccionado en nav -->
-        </section>
-    </header>
+        </div>
+    </aside>
     
     <main id="main">
         <!-- Informacion mas detallada sobre info-nav -->
         <div class="contenido-conocimiento">
     </main>
 
-    <div class="sobremi-desc">
-        <h3>Sobre Mi</h3>
-        <p>Soy estudiante de desarrollo de software con enfoque en bases de datos,
-            motivado por integrarme a una empresa donde pueda contribuir activamente
-            y continuar aprendiendo. Mi objetivo es aplicar y poner a prueba
-            mis habilidades y conocimientos, ofreciendo un desempeño excepcional
-            en el área que se me asigne.
-        </p>
-    </div>
-
-    <section class="section-sobremi">
-
-        <div class="habilidades">
-            <h3>Habilidades</h3>
-            <ul>
-                <li>Solucion y comprension de problemas</li>
-                <li>Liderazgo</li>
-                <li>Creatividad</li>
-                <li>Analisis de datos</li>
-                <li>Control de versiones</li>
-                <li>Documentacion</li>
-                <li>Excel</li>
-            </ul>
-        </div>
 
 
-        <div class="idiomas">
-            <h3>Idiomas</h3>
-            <div class="idioma">
-                <p>Español (Nativo)</p>
-                <p>Ingles (B1)</p>
-            </div>
-        </div>
-
-        <div class="educacion">
-            <h3>Educacion</h3>
-            <div class="desc-educacion">
-                <h4>Colegio la felicidad I.E.D</h4>
-                <p>Educación bachiller <br> 2018-2019</p>
-            </div>
-            <br>
-            <div class="desc-educacion">
-                <h4>Universitaria Uniagustiniana</h4>
-                <p>Desarrollo de software <br> 2023-2026</p>
-            </div>
-        </div>
+    <section class="proyectos">
+        <h3>Proyectos</h3>
+        <p>En proceso</p>
     </section>
 
     <footer>

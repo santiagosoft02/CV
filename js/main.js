@@ -1,11 +1,3 @@
-function sobremi() {
-  const seccion = document.querySelector('.section-sobremi');
-  if (seccion) {
-    seccion.scrollIntoView({ behavior: 'smooth' });
-  }
-}
-
-
 function certificados() {
   mostrarConAnimacion(`
     <div class="contenido-general ">
