@@ -32,13 +32,10 @@ function conocimientosinfo() {
           <img src="imgs/conocimientos/linux.png" alt="" class="imagen-lenguaje">
         </button>
 
-        <button class="boton-conocimiento" onclick="infoJava()">
-          <img src="imgs/conocimientos/java.png" alt="" class="imagen-lenguaje">
+        <button class="boton-conocimiento" onclick="infoPowerBI()">
+          <img src="imgs/conocimientos/PowerBI.png" alt="" class="imagen-lenguaje">
         </button>
 
-        <button class="boton-conocimiento" onclick="infoGcloud()">
-          <img src="imgs/conocimientos/gcloud.png" alt="" class="imagen-lenguaje">
-        </button>
       </div>
       <button class="boton-ocultar" onclick="ocultarGeneral()">Ocultar</button>
     </div>

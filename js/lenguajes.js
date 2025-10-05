@@ -1,24 +1,25 @@
-function infoJava() {
+function infoPowerBI() {
     const app = document.getElementById("main");
   
     app.innerHTML = 
     `
       <div class="contenido-conocimiento">
-        <h1>Java</h1>
+        <h1>Power BI</h1>
         <div class="desc-conocimiento">
           <div class="img-desc">
-            <img src="imgs/conocimientos/java.png" alt="" class="img-desc-cono">
-            <p>  Sólidos conocimientos en desarrollo backend.
-                 Experiencia en estructuras de programación, manejo de variables 
-                 y diversos tipos de código, incluyendo 
-                 programación orientada a objetos (POO). 
-                Competente en la conexión y automatización de procesos con 
-                bases de datos utilizando PHP.
+            <img src="imgs/conocimientos/PowerBI.png" alt="" class="img-desc-cono">
+            <p> enfocado en el uso de Power BI para análisis y visualización de datos empresariales:
+                Transformación de datos con Power Query. 
+                <br><br>
+                Modelado y análisis con DAX,
+                Creación de dashboards interactivos y visuales avanzados,
+                Automatización de reportes e integración con fuentes diversas (Excel, SQL, Web),
+                Aplicación de IA en Power BI (predicciones, segmentación, etc.) Fundamentos de Business Intelligence y mejores prácticas de visual storytelling.
             </p>
           </div>
+          <p>Certificado en Microsoft PowerBI <a href="https://learn.microsoft.com/en-us/users/santiagocastellanos-9741/credentials/4dda2f5eb8200d0a" target="_blank">PL- 300</a></p>
         </div>
       </div>
-      <hr>
     `;
   }
 
@@ -48,7 +49,6 @@ function infoJava() {
           </ul>
         </div>
       </div>
-      <hr>
     `;
   }
 
@@ -78,7 +78,6 @@ function infoJava() {
           </ul>
         </div>
       </div>
-      <hr>
     `;
   }
 
@@ -112,7 +111,6 @@ function infoJava() {
           </ul>
         </div>
       </div>
-      <hr>
     `;
   }
 
@@ -134,6 +132,5 @@ function infoJava() {
           </div>
         </div>
       </div>
-      <hr>
     `;
   }
