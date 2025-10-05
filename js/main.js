@@ -5,7 +5,8 @@ function certificados() {
         <a href="https://www.credly.com/badges/e07ff2dd-aff4-4faf-9318-00027745d4d9/linked_in_profile" class="certified" target="_blank">Cloud Computing Foundations</a>
         <a href="https://skillshop.exceedlms.com/student/award/JT5BttgL1cjNSYKMNC8WwGKj" class="certified" target="_blank">HTML y CSS 1</a>
         <a href="https://skillshop.exceedlms.com/student/award/7zLMm57RGiTZxz7EZzQWarDw" class="certified" target="_blank">HTML y CSS 2</a>
-        <p>Insignas en <a href="https://www.linkedin.com/in/santiago-castellanos-84913a249/" target="_blank">LinkedIN</a></p>
+        <a href="https://learn.microsoft.com/en-us/users/santiagocastellanos-9741/credentials/4dda2f5eb8200d0a" class="certified" target="_blank">Power BI PL-300</a>
+        
       </div>
       
       <button class="boton-ocultar" onclick="ocultarGeneral()">Ocultar</button>
